@@ -7,15 +7,17 @@
   padding-bottom: 20px;
   color: white;
   background-color: #1a1a1a6a;
-  position: sticky;
+  position: fixed; /* Alterado de absolute para fixed */
+  width: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 100 !important;
   transition: transform 0.3s ease;
   will-change: transform;
   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25), 0 40px 40px -20px rgba(0,0,0,0.5) inset;
   mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  pointer-events: auto;
 }
 
 .logo{

@@ -16,8 +16,8 @@ export default function Home() {
     <Header />
     <BoasVindas>
       <ContainerGrid>
-      <Resumo />
-      <NavBar />
+        <Resumo />
+        <NavBar />
 
         <section id="about" className={styles.section}>
           <h2>Sobre Mim</h2>

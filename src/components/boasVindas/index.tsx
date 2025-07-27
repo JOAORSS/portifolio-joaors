@@ -1,4 +1,7 @@
+"use client";
+
 import styles from "./boasVindas.module.css"
+import { useEffect, useState } from "react";
 
 export default function BoasVindas({ children }: { children: React.ReactNode }) {
 
@@ -22,14 +25,25 @@ export default function BoasVindas({ children }: { children: React.ReactNode }) 
         ));
     }
 
+    const [isBoasVindasVisible, setIsBoasVindasVisible] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsBoasVindasVisible(false);
+        }, 3500); // Tempo em milissegundos antes de ocultar a mensagem
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <>
-            <div className={styles.boasVindas + " " + styles.fadeOut}>
+            {isBoasVindasVisible 
+            ? <div onClick={() => setIsBoasVindasVisible(false)} className={styles.boasVindas + " " + styles.fadeOut}>
                 <h1 className={styles.texto} >
                     {textApperAnimation(parteUm)}
                     {textApperAnimation(parteDois, true)}
                 </h1>
-            </div>
+            </div> : null}
             <div className={styles.childrenContainer}>
                 {children}
             </div>

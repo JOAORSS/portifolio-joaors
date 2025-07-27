@@ -14,7 +14,7 @@ export default function Resumo() {
             </div>
           </div>
           <div className={styles.introImage}>
-            <Image src="/eu.webp" alt="Projeto" width={300} height={200} />
+            <Image src="/eu.webp" alt="Projeto" width={350} height={200} />
             <Image className={styles.introImageDois} src="/eudois.webp" alt="Projeto" width={300} height={200} />
           </div>
 
