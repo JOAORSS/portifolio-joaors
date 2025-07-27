@@ -1,0 +1,60 @@
+  .intro{
+    font-size: x-large;
+    font-family: var(--font-raleway);
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+
+  }
+
+  .highlight{
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .introHistory{
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  .education{
+    display: flex;
+    gap: 20px;
+    margin-top: 0px;
+  }
+
+  .introImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  }
+
+  .introImageDois{
+    position: absolute;
+    z-index: 1;
+    width: 55%;
+    left: -25%;
+    bottom: 5%;
+  }
+
+  @keyframes floatY {
+    0% {
+      transform: translateY(-4px);
+    }
+    50% {
+      transform: translateY(4px);
+    }
+    100% {
+      transform: translateY(-4px);
+    }
+  }
+
+  .introImageDois {
+    animation: floatY 3s ease-in-out infinite;
+  }

@@ -1,0 +1,68 @@
+
+.scrollDown {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: #AAAAAA;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+
+.scrollDownText{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+@keyframes pullAndRelease {
+    0% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
+    }
+    20% {
+        transform: translateY(1px);
+        animation-timing-function: ease-in-out;
+    }
+    30% {
+        transform: translateY(-1px);
+        animation-timing-function: ease-in-out;
+    }
+  80% {
+        transform: translateY(-5px);
+        animation-timing-function: ease-in-out;
+    }
+    90% {
+        transform: translateY(2px);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.scrollDownIcon {
+    color: #949494;
+    font-size: 1.5rem;
+    animation: pullAndRelease 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    animation-delay: 0.5s;
+}

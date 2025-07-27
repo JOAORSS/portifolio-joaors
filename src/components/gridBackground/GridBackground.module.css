@@ -1,0 +1,35 @@
+
+  .gridBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .gridColumn {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100vh;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.005);
+  }
+
+  .gridColumn1 {
+    left: 15%;
+  }
+
+  .gridColumn2 {
+    left: 37.5%;
+  }
+
+  .gridColumn3 {
+    left: 62.5%;
+  }
+
+  .gridColumn4 {
+    left: 85%;
+  }

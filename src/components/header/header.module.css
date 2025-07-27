@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  max-width: 100vw;
+  justify-content: space-between;
+  padding: 10px 20px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: #1a1a1a6a;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: transform 0.3s ease;
+  will-change: transform;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25), 0 40px 40px -20px rgba(0,0,0,0.5) inset;
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+.logo{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
