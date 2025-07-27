@@ -10,7 +10,9 @@
     align-items: center;
     justify-content: space-around;
     padding-top: 40px;
-
+    div {
+      max-width: 600px;
+    }
   }
 
   .highlight{
@@ -61,3 +63,4 @@
   .introImageDois {
     animation: floatY 3s ease-in-out infinite;
   }
+

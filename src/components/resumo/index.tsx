@@ -1,9 +1,11 @@
 import Image from "next/image";
 import styles from "./resumo.module.css"
+import ScrollFade from "@/util/scrollFade";
 
 export default function Resumo() {
   return (
-        <section className={styles.intro}>
+    <ScrollFade>
+        <section id="home" className={styles.intro}>
           <div>
             <h1 className={styles.introTitle} >Olá! Eu sou o <span className={styles.highlight}>João Raenke!</span></h1>
             <p className={styles.introDescription} >Eu sou desenvolvedor especializado Front End web e desktop, gosto de designs modernos, funcionais e sempre atentos a experiência do usuário</p>
@@ -19,5 +21,7 @@ export default function Resumo() {
           </div>
 
         </section>
+    </ScrollFade>
+      
   );
 }

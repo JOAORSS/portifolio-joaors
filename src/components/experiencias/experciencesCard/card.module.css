@@ -1,0 +1,38 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 90%;
+    height: fit-content;
+    max-height: 600px;
+}
+
+.title{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.company{
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.time{
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.description{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ccc;
+    margin: 10px 0;
+}

@@ -1,12 +1,18 @@
 "use client";
 
 import styles from "./boasVindas.module.css"
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-export default function BoasVindas({ children }: { children: React.ReactNode }) {
-
-    const parteUm = "Olá! Eu sou o ";
-    const parteDois = "João Raenke!";
+export default function BoasVindas(
+    { 
+        children, 
+        isBoasVindasVisible, 
+        setIsBoasVindasVisible 
+    }: { 
+        children: React.ReactNode, 
+        isBoasVindasVisible: boolean, 
+        setIsBoasVindasVisible: (visible: boolean) => void 
+    }) {
 
     function textApperAnimation(text: string, bold = false) {
         return text.split("").map((char, index) => (
@@ -25,23 +31,27 @@ export default function BoasVindas({ children }: { children: React.ReactNode }) 
         ));
     }
 
-    const [isBoasVindasVisible, setIsBoasVindasVisible] = useState(true);
-
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsBoasVindasVisible(false);
-        }, 3500); // Tempo em milissegundos antes de ocultar a mensagem
+        }, 3500);
+
+        if (isBoasVindasVisible) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "scroll";
+        }
 
         return () => clearTimeout(timer);
-    }, []);
+    }, [isBoasVindasVisible, setIsBoasVindasVisible]);
 
     return (
         <>
             {isBoasVindasVisible 
             ? <div onClick={() => setIsBoasVindasVisible(false)} className={styles.boasVindas + " " + styles.fadeOut}>
                 <h1 className={styles.texto} >
-                    {textApperAnimation(parteUm)}
-                    {textApperAnimation(parteDois, true)}
+                    {textApperAnimation("Olá! Eu sou o ")}
+                    {textApperAnimation("João Raenke!", true)}
                 </h1>
             </div> : null}
             <div className={styles.childrenContainer}>

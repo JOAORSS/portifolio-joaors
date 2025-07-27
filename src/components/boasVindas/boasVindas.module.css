@@ -12,6 +12,15 @@
     width: 100%;
 }
 
+.scrollPlaceHolder{
+    position: fixed;
+    width: 9px;
+    height: 100%;
+    background: #ffffff;
+    right: 0;
+    top: 0;
+}
+
 .highlight {
     color: #ffffff !important;
     font-weight: bold;
