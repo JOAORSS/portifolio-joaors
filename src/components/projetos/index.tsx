@@ -23,7 +23,7 @@ export default function Projetos() {
                     title="AluraFlix" 
                     description="Uma plataforma inspirada em serviços de streaming para organizar e visualizar seus vídeos favoritos, projeto desenvolvido em Vite, React e JavaScript." 
                     imageUrl="/aluraflix.png" 
-                    link="https://github.com/JOAORSS/aluraflix.git" />
+                    link="https://github.com/JOAORSS/aluraflix" />
 
                 <ProjetosCard 
                     title="Space App" 
@@ -34,7 +34,7 @@ export default function Projetos() {
                     title="Domínio Fatal" 
                     description="Site e-commerce para a Domínio Fatal, projeto desenvolvido em Next.js, TypeScript. Criado usando a tecnologia serverlles para o backend." 
                     imageUrl="/projetoum.png" 
-                    link="https://github.com/JOAORSS/dominio-fatal.git" />
+                    link="https://github.com/JOAORSS/dominio-fatal" />
             </div>
         </section>
         </ScrollFade>
