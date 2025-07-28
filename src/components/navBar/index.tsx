@@ -8,9 +8,11 @@ export default function NavBar() {
         <nav id="navbar" className={styles.navBar}>
           <ul className={styles.menu}>
             <ListLinkButton href="#home">Início</ListLinkButton>
+            <ListLinkButton href="#experiences">Experiências</ListLinkButton>
             <ListLinkButton href="#about">Sobre Mim</ListLinkButton>
             <ListLinkButton href="#projects">Projetos</ListLinkButton>
             <ListLinkButton href="#skills">Habilidades</ListLinkButton>
+            <ListLinkButton href="#contact">Contato</ListLinkButton>
           </ul>
         </nav>
       </div>

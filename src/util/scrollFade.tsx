@@ -8,23 +8,20 @@ export default function ScrollFade({ id, children }: { id: string; children: Rea
             const element = document.getElementById(id);
             if (element) {
                 const rect = element.getBoundingClientRect();
-                const fadeStart = 0;      // px do topo do viewport
-                const fadeEnd = -400;     // px acima do topo do viewport
-                const fadeStartBottom = window.innerHeight; // px do fundo do viewport
-                const fadeEndBottom = window.innerHeight + 400; // px abaixo do fundo do viewport
+                const fadeStart = 0;
+                const fadeEnd = -400;
+                const fadeStartBottom = window.innerHeight;
+                const fadeEndBottom = window.innerHeight + 250; // diminuído para fade mais rápido
 
-                // Fade topo
                 const progressTop = Math.min(Math.max((rect.top - fadeEnd) / (fadeStart - fadeEnd), 0), 1);
-                // Fade fundo
                 const progressBottom = Math.min(Math.max((fadeEndBottom - rect.bottom) / (fadeEndBottom - fadeStartBottom), 0), 1);
 
-                // Opacidade mínima entre os dois fades
                 setOpacity(Math.min(progressTop, progressBottom));
             }
         };
 
         window.addEventListener("scroll", handleScroll);
-        handleScroll(); // Initial call
+        handleScroll();
 
         return () => {
             window.removeEventListener("scroll", handleScroll);

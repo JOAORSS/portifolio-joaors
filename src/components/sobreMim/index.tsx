@@ -5,8 +5,8 @@ import ScrollFade from "@/util/scrollFade"
 export default function SobreMim() {
 
     return (
-          <ScrollFade id="About">
-            <section id="About" className={styles.section}>
+          <ScrollFade id="about">
+            <section id="about" className={styles.section}>
                 <h2 style={{ color: "#24be5f"}}>Sobre Mim</h2>
                 <div className={styles.container} >
                     <div className={styles.imageContainer}>

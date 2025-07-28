@@ -25,9 +25,10 @@
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: rgb(220, 211, 199);
+    background-color: rgb(215, 188, 152);
     position: absolute;
     bottom: 0;
+    color: #333;
 }
 
 .footerTitle{
@@ -46,4 +47,13 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 60px;
+}
+
+.footerLink{
+    transition: transform 200ms ease;
+}
+
+.footerLink:hover {
+    transform: scale(1.1);
+    transition: transform 200ms ease;
 }
