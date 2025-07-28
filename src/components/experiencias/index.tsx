@@ -25,8 +25,8 @@ export default function Experiencias() {
                     <Image
                         src="/dominio_fatal.webp"
                         alt="Experiências"
-                        width={800}
-                        height={700}
+                        width={1100}
+                        height={1000}
                         style={{
                             width: "100%",
                             maxWidth: "600px",

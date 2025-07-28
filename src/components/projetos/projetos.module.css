@@ -12,3 +12,35 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.githubLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border: solid #ccc 1px;
+    width: 100%;
+    max-width: 200px;
+    padding: 6px;
+    border-radius: 8px;
+    transition: 300ms;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.githubLink:hover {
+    color: #fff;
+    background-color: #444;
+}

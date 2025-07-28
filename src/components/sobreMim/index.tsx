@@ -14,8 +14,15 @@ export default function SobreMim() {
                         <Image src="/sobreMim.png" alt="Foto de perfil" width={550} height={200} className={styles.profileImage} />
                     </div>
                     <p className={styles.description}>
-                        Pellentesque mollis mattis quam. Pellentesque lectus erat, mattis eu luctus ac, faucibus nec nibh. Nulla neque ante, dictum eu metus eu, laoreet laoreet lorem. Proin tellus dui, rutrum a neque eu, dapibus venenatis felis. Maecenas a sollicitudin erat. Curabitur ornare posuere pharetra. Sed tellus massa, tincidunt eget elementum quis, interdum a enim. <br />
-                        -. Morbi blandit pretium turpis a volutpat. Nam ut pulvinar sem, at accumsan mauris. Aliquam erat volutpat. Sed tincidunt turpis scelerisque quam bibendum, ac rhoncus mi commodo. In venenatis est sodales ultrices dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vulputate facilisis leo, hendrerit vestibulum ligula tincidunt in. Cras gravida fermentum nibh quis finibus. Mauris congue sollicitudin interdum. Nunc posuere felis vitae tempus euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Olá! Me chamo João Vitor Raenke dos Santos, sou desenvolvedor com foco em Front End e UX/UI. Estou no meu quarto ano do ensino médio no IFSUL e sempre fui interessado em programar e desenvolver!
+                        <br /><br />
+                        No último ano, além dos estudos no IFSUL, concluí uma especialização com certificado pela Oracle e Alura no programa Oracle ONE, onde passei os últimos 12 meses estudando desenvolvimento Frontend, principalmente web. Aprendi sobre componentes e funções do React, otimização de códigos em JavaScript, aprimoramento do uso do GitHub e como entender e construir telas de designs criados no Figma.
+                        <br /><br />
+                        Foi uma grande trajetória, onde aprendi muito sobre desenvolvimento. Mesmo após o fim da especialização, sigo estudando frequentemente sobre essa área que gosto tanto, como o Front End.
+                        <br /><br />
+                        Fora do mundo do desenvolvimento, pratico ciclismo e sou atleta de judô (vice-campeão nacional nos Jogos dos Institutos Federais 🥋), além de reservar um tempo para jogar games!
+                        <br /><br />
+                        Sempre fui apaixonado por desenvolvimento e busco uma oportunidade para mostrar tudo que tenho no mercado de trabalho. Sou muito grato ao IFSUL por abrir as portas para este mundo da tecnologia.
                     </p>
                 </div>
             </section>
