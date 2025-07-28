@@ -23,10 +23,10 @@ export default function Experiencias() {
                         description="Responsável pela instalação e configuração de novos computadores, suporte aos servidores em rotinas de backup, resolução de problemas de rede e impressoras, além de ajustes pontuais em servidores, como configuração de DHCP e gerenciamento de endereços IP."
                     />
                     <Image
-                        src="/dominio_fatal.jpg"
+                        src="/dominio_fatal.webp"
                         alt="Experiências"
-                        width={1920}
-                        height={1080}
+                        width={800}
+                        height={700}
                         style={{
                             width: "100%",
                             maxWidth: "600px",
