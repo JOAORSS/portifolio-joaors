@@ -14,11 +14,11 @@ export default function SobreMim() {
                         <Image src="/sobreMim.png" alt="Foto de perfil" width={550} height={200} className={styles.profileImage} />
                     </div>
                     <p className={styles.description}>
-                        Olá! Me chamo João Vitor Raenke dos Santos, sou desenvolvedor com foco em Front End e UX/UI. Estou no meu quarto ano do ensino médio no IFSUL e sempre fui interessado em programar e desenvolver!
+                        Olá! Me chamo João Vitor Raenke dos Santos, sou desenvolvedor com foco em Front End e UX/UI. Estou no quarto ano do ensino médio no IFSUL e sempre fui interessado em programar e desenvolver!
                         <br /><br />
                         No último ano, além dos estudos no IFSUL, concluí uma especialização com certificado pela Oracle e Alura no programa Oracle ONE, onde passei os últimos 12 meses estudando desenvolvimento Frontend, principalmente web. Aprendi sobre componentes e funções do React, otimização de códigos em JavaScript, aprimoramento do uso do GitHub e como entender e construir telas de designs criados no Figma.
                         <br /><br />
-                        Foi uma grande trajetória, onde aprendi muito sobre desenvolvimento. Mesmo após o fim da especialização, sigo estudando frequentemente sobre essa área que gosto tanto, como o Front End.
+                        Foi uma grande trajetória, onde aprendi muito sobre desenvolvimento. Mesmo após o fim da especialização, sigo estudando frequentemente sobre essa área, a qual gosto tanto.
                         <br /><br />
                         Fora do mundo do desenvolvimento, pratico ciclismo e sou atleta de judô (vice-campeão nacional nos Jogos dos Institutos Federais 🥋), além de reservar um tempo para jogar games!
                         <br /><br />
