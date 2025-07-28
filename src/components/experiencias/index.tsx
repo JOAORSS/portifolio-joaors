@@ -25,8 +25,8 @@ export default function Experiencias() {
                     <Image
                         src="/dominio_fatal.jpg"
                         alt="Experiências"
-                        width={500}
-                        height={400}
+                        width={1920}
+                        height={1080}
                         style={{
                             width: "100%",
                             maxWidth: "600px",

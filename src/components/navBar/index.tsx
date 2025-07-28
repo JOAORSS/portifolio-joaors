@@ -53,9 +53,6 @@ export default function NavBar() {
   );
 }
 
-
-
-
 function ListLinkButton({ href, children }: { href: string; children: React.ReactNode; }) {
 
   const [color, setColor] = useState("#6c6c6c");
