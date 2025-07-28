@@ -4,7 +4,7 @@ import ScrollFade from "@/util/scrollFade";
 
 export default function Resumo() {
   return (
-    <ScrollFade>
+    <ScrollFade id="home">
         <section id="home" className={styles.intro}>
           <div>
             <h1 className={styles.introTitle} >Olá! Eu sou o <span className={styles.highlight}>João Raenke!</span></h1>
@@ -16,7 +16,7 @@ export default function Resumo() {
             </div>
           </div>
           <div className={styles.introImage}>
-            <Image src="/eu.webp" alt="Projeto" width={350} height={200} />
+            <Image className={styles.introImageUm} src="/eu.webp" alt="Projeto" width={350} height={200} />
             <Image className={styles.introImageDois} src="/eudois.webp" alt="Projeto" width={300} height={200} />
           </div>
 

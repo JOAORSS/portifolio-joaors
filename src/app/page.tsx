@@ -13,6 +13,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Experiencias from "@/components/experiencias";
 import SobreMim from "@/components/sobreMim";
+import Projetos from "@/components/projetos";
+import Habilidades from "@/components/habilidades";
 
 export default function Home() {
 
@@ -31,21 +33,12 @@ export default function Home() {
         setIsBoasVindasVisible={setBoasVindasVisible}
       >
         <ContainerGrid>
-          <Resumo />
           <NavBar />
+          <Resumo />
           <Experiencias />
           <SobreMim />
-
-          <section id="projects" className={styles.section}>
-            <h2>Projetos</h2>
-            <p>Aqui estão alguns dos meus principais projetos.</p>
-          </section>
-
-          <section id="skills" className={styles.section}>
-            <h2>Habilidades</h2>
-            <p>React, TypeScript, Node.js, e mais.</p>
-          </section>
-
+          <Projetos />
+          <Habilidades />
           <Footer />
         </ContainerGrid>
       </BoasVindas>

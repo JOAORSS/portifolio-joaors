@@ -3,6 +3,10 @@
     color: rgb(36, 190, 95);
 }
 
+.section{
+    height: 90vh;
+}
+
 .experiencesGrid{
     width: 100%;
     display: grid;
