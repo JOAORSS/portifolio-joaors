@@ -19,7 +19,7 @@ export default function Experiencias() {
                     <ExperienciasCard
                         title="TI - Tribunal de Justiça"
                         company="Terceirizado - Microempreendedor Individual"
-                        time="Mai 2025 - Presente"
+                        time="Mai 2025 - Jul 2025"
                         description="Responsável pela instalação e configuração de novos computadores, suporte aos servidores em rotinas de backup, resolução de problemas de rede e impressoras, além de ajustes pontuais em servidores, como configuração de DHCP e gerenciamento de endereços IP."
                     />
                     <Image
