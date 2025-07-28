@@ -25,20 +25,6 @@ export default function Resumo() {
               >
               <Image src="/alura.png" className={styles.educationImage} alt="Alura" width={180} height={500} />
               </a>
-              <a
-                href="/declaracaoSeMatricula.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image src="/IFSUL.jpg" className={styles.educationImage} alt="IFSUL" width={200} height={120} />
-              </a>
-              <a
-                href="https://cursos.alura.com.br/program/certificate/c90bbe83-bcb9-41db-91e2-1f19f70e8600"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-              <Image src="/alura.png" className={styles.educationImage} alt="Alura" width={180} height={500} />
-              </a>
             </div>
           </div>
           <div className={styles.introImage}>
