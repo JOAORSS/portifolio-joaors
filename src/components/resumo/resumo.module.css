@@ -64,3 +64,13 @@
     animation: floatY 3s ease-in-out infinite;
   }
 
+.educationImage{
+  border-radius: 8px;
+  transition: transform 0.3s;
+  height: 100%;
+  aspect-ratio: 24 / 9;
+}
+
+.educationImage:hover {
+  transform: scale(1.05);
+}

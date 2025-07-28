@@ -51,7 +51,7 @@ export default function BoasVindas(
             ? <div onClick={() => setIsBoasVindasVisible(false)} className={styles.boasVindas + " " + styles.fadeOut}>
                 <h1 className={styles.texto} >
                     {textApperAnimation("Olá! Eu sou o ")}
-                    {textApperAnimation("João Raenke!", true)}
+                    {textApperAnimation("João Vitor Raenke!", true)}
                 </h1>
             </div> : null}
             <div className={styles.childrenContainer}>
