@@ -12,6 +12,7 @@ import BoasVindas from "@/components/boasVindas";
 import { useState } from "react";
 import { useEffect } from "react";
 import Experiencias from "@/components/experiencias";
+import SobreMim from "@/components/sobreMim";
 
 export default function Home() {
 
@@ -33,11 +34,7 @@ export default function Home() {
           <Resumo />
           <NavBar />
           <Experiencias />
-
-          <section id="about" className={styles.section}>
-            <h2>Sobre Mim</h2>
-            <p>Sou desenvolvedor apaixonado por tecnologia e inovação.</p>
-          </section>
+          <SobreMim />
 
           <section id="projects" className={styles.section}>
             <h2>Projetos</h2>
