@@ -7,8 +7,8 @@ export default function Resumo() {
     <ScrollFade id="home">
         <section id="home" className={styles.intro}>
           <div>
-            <h1 className={styles.introTitle} >Olá! Eu sou o <span className={styles.highlight}>João Raenke!</span></h1>
-            <p className={styles.introDescription} >Eu sou desenvolvedor especializado Front End web e desktop, gosto de designs modernos, funcionais e sempre atentos a experiência do usuário.</p>
+            <h1 className={styles.introTitle} >Olá! Eu sou o <span className={styles.highlight}>João Vitor Raenke!</span></h1>
+            <p className={styles.introDescription} Desenvolvedor especializado em Front End web e desktop, gosto de designs modernos, funcionais e sempre atentos a experiência do usuário.</p>
             <p className={styles.introHistory} >Instituições de estudos:</p>
             <div className={styles.education}>
               <a
