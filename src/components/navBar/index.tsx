@@ -1,7 +1,39 @@
-import { useState } from "react";
+"use client";
+
 import styles from "./navBar.module.css";
+import { useEffect, useState } from "react";
 
 export default function NavBar() {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        "home",
+        "experiences",
+        "about",
+        "projects",
+        "skills",
+        "contact"
+      ];
+      sections.forEach(section => {
+        const sectionEl = document.getElementById(section);
+        const pointEl = document.getElementById(`${section}-point`);
+        if (sectionEl && pointEl) {
+          const rect = sectionEl.getBoundingClientRect();
+          const inView = rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
+          pointEl.style.backgroundColor = inView ? "#FFFFFF" : "#6c6c6c";
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className={styles.hoverWall}>
@@ -23,13 +55,14 @@ export default function NavBar() {
 
 
 
+
 function ListLinkButton({ href, children }: { href: string; children: React.ReactNode; }) {
 
   const [color, setColor] = useState("#6c6c6c");
 
   return (
     <li onMouseEnter={() => setColor("#FFFFFF")} onMouseLeave={() => setColor("#6c6c6c")}>
-      <div className={styles.point} style={{ backgroundColor: color }} />
+      <div id={href.replace("#", "")+"-point"} className={styles.point} style={{ backgroundColor: color }} />
       <a className={styles.about + " " + styles.link} href={href} style={{ color }}>
         {children}
       </a>
